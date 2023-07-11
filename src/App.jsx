@@ -2,8 +2,8 @@ import React from "react";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ProductDetails from "./pages/ProductDetails";
-import Contact from "./pages/Contact";
 import "./App.css"
+import SellProduct from "./pages/SellProduct";
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
             <img src="https://static.vecteezy.com/system/resources/previews/019/493/243/original/black-discord-logo-black-discord-icon-black-discord-symbol-free-free-vector.jpg" alt="" />
           </Link>
           <Link to="/">Home</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/sell">Sell</Link>
         </nav> 
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/sell" element={<SellProduct />} />
           <Route path='/productdetails/:id' element={<ProductDetails />} />
         </Routes>
 
